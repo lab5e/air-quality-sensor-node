@@ -92,7 +92,7 @@ to see the current status), the build the release:
 
 (this ensures a new build with the updated version number)
 
-Upload firmware image, set version number and assign it to the device in Horde:
+Upload firmware image, set version number and assign it to the device in [Span](https://span.lab5e.com):
 
 ```shell
 curl -s -HX-API-Token:$(cat .apikey) \
@@ -109,5 +109,5 @@ FIRMWAREID=$(cat .firmwareid) curl  -HX-API-Token:$(cat .apikey)\
 ```
 
 Prepare the files `.apikey` with the API token, `.collectionid` and
-`.deviceid` with the collection and device ID from Horde. These can be
-found and/or created in [The Horde console](https://nbiot.engineering)
+`.deviceid` with the collection and device ID from Span. These can be
+found and/or created in [The Span console](https://span.lab5e.com)
