@@ -2,13 +2,23 @@
 
 (work in progress)
 
-GPS enabled NB-IoT Sensor node for sampling NO2, NO, O3 and particulate matter. 
+[A standard enclosure from tp electric](http://www.tpelectric.com.tr/products/industrial-products/thermoplastic-enclosures/halogen-free-nonflammable-range-press-lid-screw-lid/130x220x95-screw-lid-hf-fr) was chosen to host the FDM parts and electronics. Standard feed througs were chosen for interfacing the air nozzles for the particulate matter air tunnel with the FDM air nozzles
 
-# Internal structure (preliminary)
+The parts comprising the internal structure were FDM printed using PLA.
 
-![node1](https://github.com/ExploratoryEngineering/air-quality-sensor-node/blob/master/enclosure/images/node1.jpg)
+The gas sensor block and corresponding air nozzles for the gas sensors were FDM printed using polypropylene. The air tunnel interfacing the nozzles and sensor block is standard polypropylene tubing. EPDM seals from Misumi were used between the electrochemical gas sensor cells and the gas sensing block.
 
-![node2](https://github.com/ExploratoryEngineering/air-quality-sensor-node/blob/master/enclosure/images/node2.jpg)
+# Internal structure 
+
+![node1](https://github.com/lab5e/air-quality-sensor-node/blob/master/images/assembly_render.png)
+
+# Assembled sensor
+
+![node1](https://github.com/lab5e/air-quality-sensor-node/blob/master/images/enclosure.jpg)
+
+
+
+
 
 
 
