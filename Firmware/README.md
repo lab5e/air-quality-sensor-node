@@ -97,14 +97,14 @@ Upload firmware image, set version number and assign it to the device in Horde:
 ```shell
 curl -s -HX-API-Token:$(cat .apikey) \
     -XPOST -F image=@build/zephyr/zephyr.signed.bin \
-    https://api.nbiot.engineering/collections/$(cat .collectionid)/firmware | jq -r ".imageId" > .firmwareid
+    https://api.lab5e.com/span/collections/$(cat .collectionid)/firmware | jq -r ".imageId" > .firmwareid
 
 curl -XPATCH -d'{"version":"0.0.3"}' -HX-API-Token:$(cat .apikey) \
-    https://api.nbiot.engineering/collections/$(cat .collectionid)/firmware/$(cat .firmwareid)
+    https://api.lab5e.com/span/collections/$(cat .collectionid)/firmware/$(cat .firmwareid)
 
 FIRMWAREID=$(cat .firmwareid) curl  -HX-API-Token:$(cat .apikey)\
     -XPATCH -d'{"firmware":{"targetFirmwareId": "${FIRMWAREID}"}}' \
-    https://api.nbiot.engineering/collections/$(cat .collectionid)/devices/$(cat .deviceid)
+    https://api.lab5e.com/span/collections/$(cat .collectionid)/devices/$(cat .deviceid)
 
 ```
 
