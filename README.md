@@ -1,7 +1,5 @@
 # Air quality sensor node
 
-(work in progress)
-
 GPS enabled NB-IoT Sensor node for sampling NO2, NO, O3 and particulate matter.
 
 ## OPC-N3 particle sensor
